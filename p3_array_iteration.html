@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array iteration</title>
+    <style>
+        h2{
+            color: royalblue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <script>
+
+// forEach
+
+        document.write("<h2>forEach</h2>");
+
+        var a = ["karina","alia","neha","dipika","kiyara"];
+    
+        a.forEach(function(value,index){
+            document.write(index +" : "+value + "<br>");
+        });
+
+
+
+        // filter
+
+
+        document.write("<h2>filter</h2>");
+
+        const name = ["neha","aditi","nehal","karina","riya"];
+        document.write(name);
+        const b = name.filter(check);
+        document.write("<p>Ans :- "+b+"</p>");
+
+        function check(name){
+            // return this.length >5;
+            return name.length >4;
+        }
+
+        // map
+        document.write("<h2>Map</h2>");
+        const no = [1,2,3,4];
+        document.write(no);
+
+        let arr = no.map((value) => {
+            // document.write(value)
+            return value + 2;
+
+        })
+        document.write("<p>ans :- "+ arr+"</p>");
+
+        // reduce
+        document.write("<h2>Reduce</h2>");
+        const num = [1,2,3,4,5,6];
+        document.write(num)
+        const sum = num.reduce((a,b)=>{
+            return a + b;
+        });
+
+        document.write("<p>ans :- "+ sum +"</p>");
+
+        // some
+        document.write("<h2>Some</h2>");
+        const arr2 = ["neha","aditi","nehal","karina","riya"];
+        document.write(arr2);
+        const c = arr2.some(save);
+        document.write("<p>ans :- "+c+"</p>");
+
+        function save(arr2){
+            return this.length > 4;
+        }
+
+        // every
+        document.write("<h2>every</h2>");
+
+        const d =[100,19,25,20];
+        document.write(d);
+        const e = d.every(show);
+        document.write("<p>ans :- "+e+"</p>");
+
+        function show(age){
+            return age >= 18;
+        }
+
+
+        // Find
+        document.write("<h2>find</h2>");
+
+        const ages =[10,23,19,20];
+        document.write(ages);
+        const f = ages.find(view);
+        document.write("<p>ans :- "+f+"</p>");
+
+        function view(age){
+            return age >= 18;
+        }
+
+        // findIndex
+
+        document.write("<h2>findIndex</h2>");
+
+        const ab =[10,8,23,19,20];
+        document.write(ab);
+        const g = ab.findIndex(view);
+        document.write("<p>ans :- "+g+"</p>");
+
+        function view(age){
+            return age >= 18;
+        }
+
+       
+
+    </script>
+    
+</body>
+</html>

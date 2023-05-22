@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            font-size: 18px;
+        }
+        span{
+            color: royalblue;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <script>
+
+        // length
+
+        document.write("<span>length :-</span>");
+        const car = ["bmw","Jeep","Audi","verna"];
+        const x = car.length;
+        document.write("<p>"+x+"</p>");
+         
+        //  toString
+
+        document.write("<span>toString :-</span>");
+        const language = ["c","c++","java","javascript"] 
+        const a = language.toString()
+        document.write("<p>"+a+"</p>");
+
+        // pop
+
+        document.write("<span>pop :-</span>");
+        const States = ["Gujarat","Kerala","Punjab","Odisha"]
+        document.write("<p>"+States+"</p>");
+        const c = States.pop()
+        document.write("<p>"+States+"</p>");
+
+        // push
+
+        document.write("<span>push :-</span>");
+        const city = ["surat","vadodara","rajkot","ahmedabad"]
+        document.write("<p>"+city+"</p>");
+        const b = city.push("bhavnagar")
+        document.write("<p>"+city+"</p>");
+
+
+        // shift
+        document.write("<span>shift :-</span>");
+        const food = ["Sandwich","pizza","Candy","Cake"]
+        document.write("<p>"+food+"</p>");
+        const d = food.shift("")
+        document.write("<p>"+food+"</p>");
+
+
+        // unshift
+        document.write("<span>unshift :-</span>");
+        const courses = ["computer security","artificial intelligence","data science","web development"]
+        document.write("<p>"+courses+"</p>");
+        const e = courses.unshift("Artificial intelligence")
+        document.write("<p>"+courses+"</p>");
+
+
+        // concat
+        document.write("<span>concat :-</span>");
+        const Countries = ["India","Canada","China","Germany"];
+        const Countrie = ["Japan","UK","USA",];
+        document.write("<p>"+Countries+"</p>");
+        document.write("<p>"+Countrie+"</p>");
+        const f = Countries.concat(Countrie);
+        document.write("<p>"+f+"</p>");
+
+
+        // splice
+        document.write("<span>splice :-</span>");
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        document.write("<p>"+fruits+"</p>");
+        const g = fruits.splice(1,2);
+        document.write("<p>"+g+"</p>");
+        
+        // slice
+        document.write("<span>slice :-</span>");
+        const socialmedia = ["Facebook","Instagram","WhatsApp","snapchat","twitter"];
+        document.write("<p>"+socialmedia+"</p>");
+        const h = socialmedia.slice(2,3);
+        const i = socialmedia.slice(2);
+        document.write("<p>"+h+"</p>");
+        document.write("<p>"+i+"</p>");
+
+        
+        
+
+    </script>
+    
+</body>
+</html>

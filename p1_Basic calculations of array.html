@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic calculations of array</title>
+
+    <style>
+        p{
+            font-size: 20px;
+            font-weight: bold;
+            color: royalblue;
+        }
+        h2{
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+
+    
+
+    <script>
+
+        // sum
+
+        document.write("<h2>sum</h2>")
+        const no = [1,2,3,4,5,6,7,8,9,10];
+        document.write(no);
+        // document.write(no.reduce((a,b) => a+b));
+        document.write("<p>sum :- "+ no.reduce((a,b) => a+b)+"</p>");
+
+        // subtraction
+
+        document.write("<h2>subtraction</h2>");
+        const sub = [100,50,25,5];
+        document.write(sub);
+        document.write("<p>sub :- "+ sub.reduce((a,b) => a-b)+"</p>");
+        
+
+        // multiplication
+        document.write("<h2>multiplication</h2>");
+        const mul = [1,2,3,4,5,6];
+        document.write(mul);
+        // document.write(mul.reduce((a,b) => a * b,1));
+        document.write("<p>multiplication :- "+ mul.reduce((a,b) => a * b,1)+"</p>");
+
+
+        // division
+
+        document.write("<h2>division</h2>");
+        const div = [100,20];
+        document.write(div);
+        document.write("<p>division :- "+ div.reduce((a,b) => a/b ,1)+"</p>")
+
+
+
+
+
+     
+
+        
+
+
+        
+    </script>
+    
+</body>
+</html>
